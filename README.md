@@ -1,2 +1,2 @@
-# Student-GPA-Calculator
+# GPA-Calculator
 Returns a student's GPA
