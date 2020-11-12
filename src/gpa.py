@@ -1,5 +1,5 @@
 class Student:
-    "Student class docstring: returns name, quality hours, quality points, and GPA."
+    "Returns Student name, quality hours, quality points, and GPA."
     def __init__(self,name,qhours,qpoints):
         self.name=name
         self.qhours=qhours
@@ -11,11 +11,11 @@ class Student:
     def getQualityPoints(self):
         return self.qpoints
     def gpa(self):
-        return self.qpoints/self.qhours
+        return round(self.qpoints/self.qhours,2)
 
 
 def main():
-    aStudent = Student("Mark Williams",33,89)
+    aStudent = Student("Mark Williams",33,84)
     bStudent = Student("Jeb Doe",66,150)
 
     # student A
