@@ -18,8 +18,8 @@ class Student:
 
 
 def main():
-    aStudent = Student("Nayeli Fernandez",33,84)
-    bStudent = Student("Paula Gomez",66,150)
+    aStudent = Student("Nayeli Fernandez",69,184)
+    bStudent = Student("Paula Gomez",96,152)
 
     # student A
     print(f"Student's Name: {aStudent.getName()}")
