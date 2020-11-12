@@ -21,25 +21,12 @@ def main():
     aStudent = Student("Nayeli Fernandez",69,184)
     bStudent = Student("Paula Gomez",96,152)
 
-    # student A
-    print(f"Student's Name: {aStudent.getName()}")
-    print(f"Quality Hours:{aStudent.getQualityHours()}")
-    print(f"Quality Points:{aStudent.getQualityPoints()}")
-    print(f"GPA:{aStudent.gpa()}")
-    
-    # student B
-    print(f"Student's Name: {bStudent.getName()}")
-    print(f"Quality Hours:{bStudent.getQualityHours()}")
-    print(f"Quality Points:{bStudent.getQualityPoints()}")
-    print(f"GPA:{bStudent.gpa()}")
-
     root = tk.Tk()
     root.title("GPA Calculator")
 
     data = ['Student Name','Student Quality Hours', 'Student Quality Points', 'GPA']
     for i,j in enumerate(data):
         tk.Label(root,text=f'{j}',bg="navy",fg="whitesmoke",font=('Verdana 17')).grid(row=i+1,column=0,sticky=tk.W)
-
 
     # myFunctionsA = ['aStudent.getName()','aStudent.getQualityHours()','aStudent.getQualityPoints()','aStudent.gpa()']
     # myFunctionsB = ['bStudent.getName()','bStudent.getQualityHours()','bStudent.getQualityPoints()','bStudent.gpa()']
