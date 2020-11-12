@@ -1,5 +1,5 @@
-# GPA-Calculator
-## Tkiner app to display student GPA
+# GPA-Calculator written in Python using Tkinter
+##  Displays student GPA
 ![GPA Calc Image](/img/gpa.png)
 
 
