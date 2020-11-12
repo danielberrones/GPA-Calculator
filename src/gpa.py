@@ -37,7 +37,7 @@ def main():
     root.title("GPA Calculator")
 
     data = ['Student Name','Student Quality Hours', 'Student Quality Points', 'GPA']
-    for i,j in  enumerate(data):
+    for i,j in enumerate(data):
         tk.Label(root,text=f'{j}',bg="navy",fg="whitesmoke",font=('Verdana 17')).grid(row=i+1,column=0,sticky=tk.W)
 
 
