@@ -35,6 +35,7 @@ def main():
     print(f"GPA:{bStudent.gpa()}")
 
     root = tk.Tk()
+    root.title("GPA Calculator")
 
     tkLabel = tk.Label(root, text='Student Name',bg="navy",fg="whitesmoke",font=('Helvetica 22'))
     tkLabel.grid(row=0,column=0, sticky=tk.W)
