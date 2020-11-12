@@ -18,8 +18,8 @@ class Student:
 
 
 def main():
-    aStudent = Student("Mark Williams",33,84)
-    bStudent = Student("Jeb Doe",66,150)
+    aStudent = Student("Nayeli Fernandez",33,84)
+    bStudent = Student("Paula Gomez",66,150)
 
     # student A
     print(f"Student's Name: {aStudent.getName()}")
@@ -38,12 +38,12 @@ def main():
 
     data = ['Student Name','Student Quality Hours', 'Student Quality Points', 'GPA']
     for i,j in  enumerate(data):
-        tk.Label(root,text=f'{j}',bg="navy",fg="whitesmoke",font=('Helvetica 22')).grid(row=i+1,column=0,sticky=tk.W)
+        tk.Label(root,text=f'{j}',bg="navy",fg="whitesmoke",font=('Verdana 17')).grid(row=i+1,column=0,sticky=tk.W)
 
 
     # myFunctionsA = ['aStudent.getName()','aStudent.getQualityHours()','aStudent.getQualityPoints()','aStudent.gpa()']
     # myFunctionsB = ['bStudent.getName()','bStudent.getQualityHours()','bStudent.getQualityPoints()','bStudent.gpa()']
-    
+
     myDicta = {0:aStudent.getName(),1:aStudent.getQualityHours(),2:aStudent.getQualityPoints(),3:aStudent.gpa()}
     myDictb = {0:bStudent.getName(),1:bStudent.getQualityHours(),2:bStudent.getQualityPoints(),3:bStudent.gpa()}
 
