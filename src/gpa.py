@@ -2,7 +2,7 @@ import tkinter as tk
 
 
 class Student:
-    "Returns Student name, quality hours, quality points, and GPA."
+    "Returns student name, quality hours, quality points, and GPA."
     def __init__(self,name,qhours,qpoints):
         self.name=name
         self.qhours=qhours
