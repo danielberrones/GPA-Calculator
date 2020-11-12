@@ -36,29 +36,39 @@ def main():
     root = tk.Tk()
     root.title("GPA Calculator")
 
-    tkLabel = tk.Label(root, text='Student Name',bg="navy",fg="whitesmoke",font=('Helvetica 22'))
-    tkLabel.grid(row=0,column=0, sticky=tk.W)
+    data = ['Student Name','Student Quality Hours', 'Student Quality Points', 'GPA']
+    for i,j in  enumerate(data):
+        tk.Label(root,text=f'{j}',bg="navy",fg="whitesmoke",font=('Helvetica 22')).grid(row=i+1,column=0,sticky=tk.W)
 
-    tkLabel1 = tk.Label(root, text='Student Quality Hours',bg="navy",fg="whitesmoke",font=('Helvetica 22'))
-    tkLabel1.grid(row=1,column=0, sticky=tk.W)
 
-    tkLabel2 = tk.Label(root, text='Student Quality Points',bg="navy",fg="whitesmoke",font=('Helvetica 22'))
-    tkLabel2.grid(row=2,column=0, sticky=tk.W)
+    # myFunctions = ['getName()','getQualityHours()','getQualityPoints()','gpa()']
+    # for i,j in  enumerate(data):
+    #     tk.Label(root,text=f'{j}',bg="whitesmoke",fg="navy",font=('Helvetica 20')).grid(row=i+1,column=1,sticky=tk.W)
+
+
+    # tkLabel = tk.Label(root, text='Student Name',bg="navy",fg="whitesmoke",font=('Helvetica 22'))
+    # tkLabel.grid(row=0,column=0, sticky=tk.W)
+
+    # tkLabel1 = tk.Label(root, text='Student Quality Hours',bg="navy",fg="whitesmoke",font=('Helvetica 22'))
+    # tkLabel1.grid(row=1,column=0, sticky=tk.W)
+
+    # tkLabel2 = tk.Label(root, text='Student Quality Points',bg="navy",fg="whitesmoke",font=('Helvetica 22'))
+    # tkLabel2.grid(row=2,column=0, sticky=tk.W)
     
-    tkLabel3 = tk.Label(root, text='GPA',bg="navy",fg="whitesmoke",font=('Helvetica 22'))
-    tkLabel3.grid(row=3,column=0, sticky=tk.W)
+    # tkLabel3 = tk.Label(root, text='GPA',bg="navy",fg="whitesmoke",font=('Helvetica 22'))
+    # tkLabel3.grid(row=3,column=0, sticky=tk.W)
 
-    tkLabel4 = tk.Label(root, text=f"{bStudent.getName()}",bg="whitesmoke",fg="navy",font=('Arial 22'))
-    tkLabel4.grid(row=0,column=1, sticky=tk.W)
+    # tkLabel4 = tk.Label(root, text=f"{bStudent.getName()}",bg="whitesmoke",fg="navy",font=('Arial 22'))
+    # tkLabel4.grid(row=0,column=1, sticky=tk.W)
     
-    tkLabel5 = tk.Label(root, text=f"{bStudent.getQualityHours()}",bg="whitesmoke",fg="navy",font=('Arial 22'))
-    tkLabel5.grid(row=1,column=1, sticky=tk.W)
+    # tkLabel5 = tk.Label(root, text=f"{bStudent.getQualityHours()}",bg="whitesmoke",fg="navy",font=('Arial 22'))
+    # tkLabel5.grid(row=1,column=1, sticky=tk.W)
 
-    tkLabel6 = tk.Label(root, text=f"{bStudent.getQualityPoints()}",bg="whitesmoke",fg="navy",font=('Arial 22'))
-    tkLabel6.grid(row=2,column=1, sticky=tk.W)
+    # tkLabel6 = tk.Label(root, text=f"{bStudent.getQualityPoints()}",bg="whitesmoke",fg="navy",font=('Arial 22'))
+    # tkLabel6.grid(row=2,column=1, sticky=tk.W)
 
-    tkLabel7 = tk.Label(root, text=f"{bStudent.gpa()}",bg="whitesmoke",fg="navy",font=('Arial 22'))
-    tkLabel7.grid(row=3,column=1, sticky=tk.W)
+    # tkLabel7 = tk.Label(root, text=f"{bStudent.gpa()}",bg="whitesmoke",fg="navy",font=('Arial 22'))
+    # tkLabel7.grid(row=3,column=1, sticky=tk.W)
 
     
     root.mainloop()
